@@ -22,4 +22,4 @@ export default defineConfig(({ mode }) => {
     preview: {
       allowedHosts: ["webapp-topup-game-production.up.railway.app"]
   }
-}
+})
