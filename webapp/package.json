@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "vite preview --host 0.0.0.0 --port $PORT"
+    "start": "vite preview --host 0.0.0.0 --port $PORT --strictPort"
   },
   "dependencies": {
     "@cloudflare/workers-types": "^4.20260301.1",
