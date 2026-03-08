@@ -3,14 +3,6 @@
     "dev": "vite",
     "build": "vite build",
     "start": "vite preview --host 0.0.0.0 --port $PORT"
-    "preview": "wrangler pages dev",
-    "deploy": "npm run build && wrangler pages deploy dist",
-    "deploy:prod": "npm run build && wrangler pages deploy dist --project-name webapp",
-    "dev:sandbox": "wrangler pages dev dist --d1=webapp-production --local --ip 0.0.0.0 --port 3000",
-    "db:migrate:local": "wrangler d1 migrations apply webapp-production --local",
-    "db:seed": "wrangler d1 execute webapp-production --local --file=./migrations/0001_initial.sql",
-    "db:reset": "rm -rf .wrangler/state/v3/d1 && npm run db:seed",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
     "@cloudflare/workers-types": "^4.20260301.1",
