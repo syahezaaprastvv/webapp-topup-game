@@ -19,5 +19,7 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: 'dist',
     },
+    preview: {
+      allowedHosts: ["webapp-topup-game-production.up.railway.app"]
   }
-})
+}
